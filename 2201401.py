@@ -1,6 +1,10 @@
 #!/usr/bin/env python
 # coding: utf-8
 
+# # STUDENT ID: 2201401
+
+# ## GITHUB REPOSITORY LINK: https://github.com/sriCharan433/CE888-2201401.git
+
 # In[1]:
 
 
@@ -227,6 +231,12 @@ merge = merge.rename(columns={'datetime': 'Time(sec)'})
 
 # # Merge two data sets
 
+# ## https://stackoverflow.com/questions/70182187/pandas-keyerror-when-merging-2-dataframesm
+# 
+# ## https://pandas.pydata.org/docs/user_guide/merging.html
+# 
+# ### The above links provided are reference for the below code to merge two data set frames. 
+
 # In[18]:
 
 
@@ -325,6 +335,11 @@ print('precision_score',rfc_precision)
 print('accuracy_score',rfc_accuracy)
 
 
+# ### The code creates a confusion matrix and precision-recall curve for the Random Forest Classifier. The confusion matrix shows the true and predicted labels, while the precision-recall curve plots the tradeoff between precision and recall. These visualizations help evaluate the performance of the classifier.
+
+# ## below link is for reference, for the plotting of confusion matrix under Random forest and Logistic regression
+# ## https://stackoverflow.com/questions/57329189/rendering-a-confusion-matrix
+
 # In[35]:
 
 
@@ -395,6 +410,8 @@ print('precision_score',lr_precision)
 print('accuracy_score',lr_accuracy)
 
 
+# ### The code creates a confusion matrix for a logistic regression model's predictions. The matrix is plotted using matplotlib, with the axes labeled and a color bar added. The plot shows the number of true positive, true negative, false positive, and false negative predictions for each class.
+
 # In[36]:
 
 
@@ -420,3 +437,12 @@ cbar = ax.figure.colorbar(im, ax=ax)
 # Display plot
 plt.show()
 
+
+# ## Other Models like Support vector machines, linear regression, were tried on this dataset.
+# ### After attempting to fit SVM and linear regression models on the given dataset, it was discovered that the size of the dataset exceeded the memory capacity of the models. As a result, the models were unable to process the data and failed to run. This limitation highlights the importance of choosing appropriate models for large datasets and optimizing their performance to prevent memory errors and improve computational efficiency.
+
+# ### In conclusion, the analysis conducted on the stress dataset has shed light on some key insights that can be useful for the company. 
+# 
+# ### The results show that the Random Forest Classifier and Support Vector Machine algorithms can be used to predict stress levels with reasonable accuracy. 
+# 
+# ### However, there is still room for improvement in terms of model performance, as the F1-score for both models was relatively low.
